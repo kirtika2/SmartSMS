@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout android:id="@+id/linearLayout1"
+        android:layout_width="match_parent" android:layout_weight="0"
+        android:layout_height="wrap_content">
+        <Button android:text="Inbox" android:id="@+id/btnInbox"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"></Button>
+        <Button android:text="Sent Box" android:id="@+id/btnSentBox"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"></Button>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/GestureEvent"
+        android:layout_gravity="right"
+        android:text="LargeText"
+        android:visibility="invisible" />
+
+    <ListView android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/lvMsg"
+        android:background="@drawable/custom_list"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="@dimen/abc_control_padding_material"></ListView>
+
+</LinearLayout>
